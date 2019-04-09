@@ -14,7 +14,7 @@
 Route::get('/', function () {
   // $blogArticles = DB::table('blogs')->get();
   // return $blogArticles;
-  return view('home');
+  return view('welcome');
 });
 
 // Route::get('{any}', function () {

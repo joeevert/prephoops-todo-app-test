@@ -15,7 +15,7 @@ export default class Index extends Component {
       <div>
         <Router>
           <div>
-            {/* <Nav /> */}
+            <Nav />
             {/* <Redirect exact from="/" to="/login" /> */}
             <Route exact path="/" component={ToDo} />
             {/* <Route exact path="/login" component={Login} /> */}
