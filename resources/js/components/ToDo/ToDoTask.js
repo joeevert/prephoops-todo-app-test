@@ -159,7 +159,6 @@ class ToDoTask extends Component {
               <i className="fas fa-save"></i>
             </button>
           }
-            
             <button 
               className="btn btn-outline-danger" 
               data-toggle="modal" 

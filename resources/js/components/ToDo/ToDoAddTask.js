@@ -30,32 +30,34 @@ class ToDoAddTask extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className="form">
-        <div className="input-group mb-3">
-          <input 
-            type="text" 
-            className="form-control"
-            // name="task"
-            name="name" 
-
-            placeholder="Add a new task..." 
-            aria-label="Add a new task..." 
-            aria-describedby="basic-addon2"
-            onChange={this.handleChange}
-            // value={this.state.task} 
-            value={this.state.name} 
-
-          />
-          <div className="input-group-append">
-            <button 
-              className="btn btn-outline-primary" 
-              type="submit"
-            >
-              <i className="fas fa-plus-circle"></i>
-            </button>
+      <React.Fragment className="">
+        <h1 className="text-center title">What needs to get done?</h1>
+        <form onSubmit={this.handleSubmit}>
+          <div className="input-group mb-3">
+            <input 
+              type="text" 
+              className="form-control"
+              // name="task"
+              name="name" 
+              placeholder="Add a new task..." 
+              aria-label="Add a new task..." 
+              aria-describedby="basic-addon2"
+              onChange={this.handleChange}
+              // value={this.state.task} 
+              value={this.state.name} 
+              autoFocus
+            />
+            <div className="input-group-append">
+              <button 
+                className="btn btn-outline-primary" 
+                type="submit"
+              >
+                <i className="fas fa-plus-circle"></i>
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </React.Fragment>
     );
   }
 }

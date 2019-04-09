@@ -6539,7 +6539,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form {\n  margin: 50px 0px;\n}\n\n.tasks ul {\n  padding: 0;\n}", ""]);
+exports.push([module.i, ".title {\n  margin-top: 50px;\n}\n\n.tasks ul {\n  padding: 0;\n}", ""]);
 
 // exports
 
@@ -66698,9 +66698,12 @@ function (_Component) {
   _createClass(ToDoAddTask, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        onSubmit: this.handleSubmit,
-        className: "form"
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+        className: ""
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "text-center title"
+      }, "What needs to get done?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "input-group mb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -66713,7 +66716,8 @@ function (_Component) {
         "aria-describedby": "basic-addon2",
         onChange: this.handleChange // value={this.state.task} 
         ,
-        value: this.state.name
+        value: this.state.name,
+        autoFocus: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "input-group-append"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -66721,7 +66725,7 @@ function (_Component) {
         type: "submit"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-plus-circle"
-      })))));
+      }))))));
     }
   }]);
 
