@@ -1,0 +1,41 @@
+.nav {
+  background-color: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+  }
+  .login {
+    &-container {
+      background-color: #f76517;
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      cursor: pointer;
+      transition: all .25s ease;
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: #fff;
+        .login-btn {
+          color: #f76517;
+        }
+      }
+    }
+    &-btn {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      padding: 0px 15px;
+      transition: all .25s ease;
+    }
+  }
+}
